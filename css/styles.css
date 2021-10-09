@@ -1,0 +1,284 @@
+/*#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#
+    This is for small devices only
+#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#*/
+@media only screen and (max-width: 480px){
+    /*#-#-#-#-#-#
+    Page-header div container related
+    #-#-#-#-#-#*/
+    div#page-header>img{
+        content: url(../resources/logos/logo-small.png)
+    }
+    /*#-#-#-#-#-#
+    Navigation bar
+    #-#-#-#-#-#*/
+    nav>a, footer{
+        font-size: 1em;
+    }
+    /*#-#-#-#-#-#
+    Image slider div container related
+    #-#-#-#-#-#*/
+    div.slide>img{
+        width: 90%;
+    }
+    div#image-slider{
+        width: 100%;
+        position: relative;
+        margin: auto;
+    }
+    div.slide{
+        animation: fadein;
+        animation-duration: 3s;
+    }
+    @keyframes fadein{
+        from {opacity: 0.3}
+        to {opacity: 1}
+    }
+    a.slide-prev{
+        position: absolute;
+        top: 0;
+        width: 50%;
+        height: 100%;
+        left: 0;
+    }
+    a.slide-next{
+        position: absolute;
+        top: 0;
+        width: 50%;
+        height: 100%;
+        right: 0;
+    }
+    /*#-#-#-#-#-#
+    Welcome div container related
+    #-#-#-#-#-#*/
+    div#welcome>img{
+        width: 90%;
+    }
+    div.column>img{
+        display: none;
+    }
+    /*#-#-#-#-#-#
+    Features div container related
+    #-#-#-#-#-#*/
+    iframe#video{
+        height: 200px;
+        width: 100%;
+    }
+    /*#-#-#-#-#-#
+    Contact div container related
+    #-#-#-#-#-#*/
+    iframe#map{
+        height: 300px;
+        margin: 0;
+    }
+    /*#-#-#-#-#-#
+    images in about div containers related
+    #-#-#-#-#-#*/
+    img.nearby{
+        width: 90%;
+    }
+}
+
+/*#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#
+    This is for anything larger than a small device
+#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#*/
+@media only screen and (min-width: 481px){
+    /*#-#-#-#-#-#
+    IFrames
+    #-#-#-#-#-#*/
+    iframe#map{
+        height: 480px;
+    }
+    iframe#video{
+        width: 100%;
+        height: 480px;
+    }
+    /*#-#-#-#-#-#
+    Page-header div container related
+    #-#-#-#-#-#*/
+    div#page-header>img{
+        content: url(../resources/logos/logo-medium.png)
+    }
+    /*#-#-#-#-#-#
+    Navigation bar
+    #-#-#-#-#-#*/
+    nav>a, footer{
+        font-size: 1.5em;
+    }
+    /*#-#-#-#-#-#
+    Image slider div container related
+    #-#-#-#-#-#*/
+    div#image-slider{
+        display: none;
+    }
+    div.slide>img{
+        width: 90%;
+    }
+    /*#-#-#-#-#-#
+    images in about div containers related
+    #-#-#-#-#-#*/
+    img.nearby{
+        width: 50%
+    }
+    /*#-#-#-#-#-#
+    Welcome div container related
+    #-#-#-#-#-#*/
+    div#welcome>img{
+        width: 90%;
+    }
+}
+
+/*#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#
+    This is for anything larger than a tablet
+#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#*/
+@media only screen and (min-width: 769px){
+    /*#-#-#-#-#-#
+    Page-header div container related
+    #-#-#-#-#-#*/
+    div#page-header>img{
+        content: url(../resources/logos/logo-large.png)
+    }
+    /*#-#-#-#-#-#
+    Navigation bar
+    #-#-#-#-#-#*/
+    nav>a, footer{
+        font-size: 2em;
+    }
+    /*#-#-#-#-#-#
+    Gallery div container related
+    #-#-#-#-#-#*/
+    div.column{
+        width: 30%;
+        display: inline-block;
+    }
+    div.column>img{
+        width: 100%;
+        transition: ease-out .1s
+    }
+    div.column>img:hover{
+        transform: scale(2);
+        transition: ease-in .3s;
+    }
+    /*#-#-#-#-#-#
+    Detail div containers related
+    #-#-#-#-#-#*/
+    div.details{
+        width: 33%;
+        display: inline-block;
+    }
+    /*#-#-#-#-#-#
+    Welcome div container related
+    #-#-#-#-#-#*/
+    div#welcome>p{
+        text-align: justify;
+        width: 40%;
+        display: inline-block;
+        margin: auto 5%;
+    }
+    div#welcome>img{
+        width: 35%;
+        display: inline-block;
+        margin: auto 5%;
+    }
+    /*#-#-#-#-#-#
+    Features div container related
+    #-#-#-#-#-#*/
+    div#features>ul{
+        display: inline-block;
+        width: 40%;
+    }
+    iframe#video{
+        display: inline-block;
+        width: 50%;
+        height: 360px;
+    }
+    /*#-#-#-#-#-#
+    About div container related
+    #-#-#-#-#-#*/
+    div#food>div.nearby, div#attractions>div.nearby{
+        width: 33%;
+        display: inline-block;
+    }
+}
+
+/*
+    This is for anything larger than a small laptop
+*/
+@media only screen and (min-width: 1025px){
+}
+
+/*#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#
+    This is will affect all devices
+#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#*/
+/*#-#-#-#-#-#-#
+Generic HTML
+#-#-#-#-#-#-#*/
+html{
+    text-align: center;
+    background-color: azure;
+}
+body{
+    margin: 5%;
+}
+nav{
+    background-color: floralwhite;
+    display: flex;
+    border-radius: .5em;
+}
+nav>a{
+    text-decoration: none;
+    color: palevioletred;
+    padding: 1%;
+    border: pink solid 1px;
+    flex-grow: 1;
+}
+footer{
+    background-color: floralwhite;
+    color: pink;
+    padding: 1%;
+    font-family: 'Clicker Script', cursive;
+    border: pink solid 1px;
+}
+h1, ul, p, h2, h3, a.contact{
+    font-family: 'Cardo', serif;
+}
+/*#-#-#-#-#-#-#
+ID'd tags and subtags
+#-#-#-#-#-#-#*/
+div#page-header{
+    background-color: pink;
+    color: lightyellow;
+    border-radius: .5em;
+    margin-bottom: 1em;
+}
+div#navigation{
+    position: sticky;
+    top: 0;
+    font-family: 'Clicker Script', cursive;
+}
+div#body{
+    background-color: white;
+    padding: 5%;
+    margin: 3% 0;
+}
+iframe#map{
+        width: 100%;
+}
+div#features>ul{
+    text-align: left;
+}
+div#offer>a{
+    text-decoration: none;
+    border-radius: .5em;
+    border: pink 1px solid;
+    background-color: floralwhite;
+    font-family: 'Cardo', serif;
+    padding: 1em;
+    color: pink;
+}
+div#offer>a:hover{
+    transition: scale(1.25);
+    transition-duration: .3s;
+}
+div#cancellation>h3{
+    margin-top: 10%;
+}
