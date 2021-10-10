@@ -1,4 +1,80 @@
 /*#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#
+    This is will affect all devices
+#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#*/
+/*#-#-#-#-#-#-#
+Generic HTML
+#-#-#-#-#-#-#*/
+html{
+    text-align: center;
+    background-color: azure;
+}
+body{
+    margin: 5%;
+}
+nav{
+    background-color: floralwhite;
+    display: flex;
+    border-radius: .5em;
+}
+nav>a{
+    text-decoration: none;
+    color: palevioletred;
+    padding: 1%;
+    border: pink solid 1px;
+    flex-grow: 1;
+}
+footer{
+    background-color: floralwhite;
+    color: pink;
+    padding: 1%;
+    font-family: 'Clicker Script', cursive;
+    border: pink solid 1px;
+}
+h1, ul, p, h2, h3, a.contact{
+    font-family: 'Cardo', serif;
+}
+/*#-#-#-#-#-#-#
+ID'd tags and subtags
+#-#-#-#-#-#-#*/
+div#page-header{
+    background-color: pink;
+    color: lightyellow;
+    border-radius: .5em;
+    margin-bottom: 1em;
+}
+div#navigation{
+    position: sticky;
+    top: 0;
+    font-family: 'Clicker Script', cursive;
+}
+div#body{
+    padding: 5%;
+    margin: 3% 0;
+}
+iframe#map{
+        width: 100%;
+}
+div#features>ul{
+    text-align: left;
+}
+div#offer>a{
+    text-decoration: none;
+    border-radius: .5em;
+    border: pink 1px solid;
+    background-color: floralwhite;
+    font-family: 'Cardo', serif;
+    padding: 1em;
+    color: pink;
+}
+div#offer>a:hover{
+    transition: scale(1.25);
+    transition-duration: .3s;
+}
+div#cancellation>h3{
+    margin-top: 10%;
+}
+
+/*#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#
     This is for small devices only
 #-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#*/
 @media only screen and (max-width: 480px){
@@ -11,6 +87,9 @@
     /*#-#-#-#-#-#
     Navigation bar
     #-#-#-#-#-#*/
+    img#nav-logo{
+        display: none;
+    }
     nav>a, footer{
         font-size: 1em;
     }
@@ -27,7 +106,7 @@
     }
     div.slide{
         animation: fadein;
-        animation-duration: 3s;
+        animation-duration: 1s;
     }
     @keyframes fadein{
         from {opacity: 0.3}
@@ -46,6 +125,12 @@
         width: 50%;
         height: 100%;
         right: 0;
+    }
+    /*#-#-#-#-#-#
+    Body div container related
+    #-#-#-#-#-#*/
+    div#body{
+        background-color: white;
     }
     /*#-#-#-#-#-#
     Welcome div container related
@@ -101,8 +186,17 @@
     /*#-#-#-#-#-#
     Navigation bar
     #-#-#-#-#-#*/
+    img#nav-logo{
+        display: none;
+    }
     nav>a, footer{
         font-size: 1.5em;
+    }
+    /*#-#-#-#-#-#
+    Body div container related
+    #-#-#-#-#-#*/
+    div#body{
+        background-color: white;
     }
     /*#-#-#-#-#-#
     Image slider div container related
@@ -204,81 +298,41 @@
     This is for anything larger than a small laptop
 */
 @media only screen and (min-width: 1025px){
-}
-
-/*#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#
-    This is will affect all devices
-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#*/
-/*#-#-#-#-#-#-#
-Generic HTML
-#-#-#-#-#-#-#*/
-html{
-    text-align: center;
-    background-color: azure;
-}
-body{
-    margin: 5%;
-}
-nav{
-    background-color: floralwhite;
-    display: flex;
-    border-radius: .5em;
-}
-nav>a{
-    text-decoration: none;
-    color: palevioletred;
-    padding: 1%;
-    border: pink solid 1px;
-    flex-grow: 1;
-}
-footer{
-    background-color: floralwhite;
-    color: pink;
-    padding: 1%;
-    font-family: 'Clicker Script', cursive;
-    border: pink solid 1px;
-}
-h1, ul, p, h2, h3, a.contact{
-    font-family: 'Cardo', serif;
-}
-/*#-#-#-#-#-#-#
-ID'd tags and subtags
-#-#-#-#-#-#-#*/
-div#page-header{
-    background-color: pink;
-    color: lightyellow;
-    border-radius: .5em;
-    margin-bottom: 1em;
-}
-div#navigation{
-    position: sticky;
-    top: 0;
-    font-family: 'Clicker Script', cursive;
-}
-div#body{
-    background-color: white;
-    padding: 5%;
-    margin: 3% 0;
-}
-iframe#map{
+    div#body{
+        width: 60%;
+        float: right;
+    }
+    div#page-header{
+        width: 70%;
+        float: right;
+    }
+    img#nav-logo{
+        display: block;
         width: 100%;
-}
-div#features>ul{
-    text-align: left;
-}
-div#offer>a{
-    text-decoration: none;
-    border-radius: .5em;
-    border: pink 1px solid;
-    background-color: floralwhite;
-    font-family: 'Cardo', serif;
-    padding: 1em;
-    color: pink;
-}
-div#offer>a:hover{
-    transition: scale(1.25);
-    transition-duration: .3s;
-}
-div#cancellation>h3{
-    margin-top: 10%;
+        padding: 20% 0;
+        background-color: pink;
+    }
+    div#navigation{
+        position: fixed;
+        height: 100%;
+        width: 15%;
+        float: left;
+    }
+    div#navigation>nav{
+        width: 100%;
+        height: 100%;
+        display: block;
+    }
+    div#navigation>nav>a{
+        width: 100%;
+        display: block;
+        height: auto;
+        padding: 10% 0;
+    }
+    footer{
+        position: fixed;
+        bottom: 0;
+        width: 15%;
+        padding: 0;
+    }
 }
