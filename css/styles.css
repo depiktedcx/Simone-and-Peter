@@ -79,6 +79,12 @@ div#cancellation>h3{
 #-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#*/
 @media only screen and (max-width: 480px){
     /*#-#-#-#-#-#
+    Warning div container related
+    #-#-#-#-#-#*/
+    div#warning{
+        display: none;
+    }
+    /*#-#-#-#-#-#
     Page-header div container related
     #-#-#-#-#-#*/
     div#page-header>img{
@@ -167,6 +173,12 @@ div#cancellation>h3{
     This is for anything larger than a small device
 #-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#*/
 @media only screen and (min-width: 481px){
+    /*#-#-#-#-#-#
+    Warning div container related
+    #-#-#-#-#-#*/
+    div#warning{
+        display: none;
+    }
     /*#-#-#-#-#-#
     IFrames
     #-#-#-#-#-#*/
@@ -334,5 +346,13 @@ div#cancellation>h3{
         bottom: 0;
         width: 15%;
         padding: 0;
+    }
+}
+@media only screen and (min-width: 1600px){
+    /*#-#-#-#-#-#
+    Warning div container related
+    #-#-#-#-#-#*/
+    div#warning{
+        display: block;
     }
 }
