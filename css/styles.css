@@ -313,6 +313,7 @@ div#cancellation>h3{
     div#body{
         width: 60%;
         float: right;
+        margin-bottom: 10%;
     }
     div#page-header{
         width: 70%;
@@ -343,8 +344,9 @@ div#cancellation>h3{
     }
     footer{
         position: fixed;
+        left: 0;
         bottom: 0;
-        width: 15%;
+        width: 100%;
         padding: 0;
     }
 }
@@ -354,5 +356,6 @@ div#cancellation>h3{
     #-#-#-#-#-#*/
     div#warning{
         display: block;
+        font-size: .5em;
     }
 }
